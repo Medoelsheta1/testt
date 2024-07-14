@@ -1,0 +1,662 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #018075;
+
+}
+a {
+    text-decoration: none!important;
+    scroll-behavior: smooth;
+}
+.bold {
+    font-weight: bold;
+}
+ul {
+    list-style: none;
+}
+header {
+    height: 93px;
+}
+.f18 {
+    font-size: 18px;
+}
+.f16 {
+    font-size: 16px;
+}
+.f14 {
+    font-size: 14px;
+}
+.f12 {
+    font-size: 12px;
+}
+.cursorPointer {
+    cursor: pointer;
+}
+header .logo {
+    background-color: var(--main-color);
+    width: 120px;
+    padding: 15px 40px;
+    border-radius: 0px 0px 0px 16px;
+
+}
+header .logo img {
+    width: 41px;
+    height: 65px;
+}
+header .navIcons .navIcon {
+
+    width: 62px;
+    height: 62px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #F8F9F9;
+    border-radius: 16px;
+    cursor: pointer;
+}
+header .studentInfo {
+    width: 294px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 26px #00000017;
+    padding: 5px 13px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px
+}
+header .studentInfo .studentInfoText {
+    font: normal normal medium 18px/27px IBM Plex Sans Arabic;
+    flex: 1;
+    margin-right: 10px;
+}
+header .studentInfo .studentImage {
+    width: 53px;
+    height: 53px;
+    border: 50%;
+
+
+}
+header .studentInfo .mainArrowDownIconDown {
+    display: none;
+}
+header .studentInfo .linksList {
+    position: absolute;
+    top: 63px;
+    width: 100%;
+    display: none;
+    left: 0;
+}
+header .studentInfo .linksList > div {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding: 16px;
+    height: 56px;
+    cursor: pointer;
+    width: 100%;
+    border-top: 1px solid #70707049;
+    border-bottom: 1px solid #70707049;
+}
+header .studentInfo .linksList > div:last-child img {
+    margin-right: -5px;
+}
+header .studentInfo .linksList > div:last-child {
+    border-bottom-right-radius: 16px ;
+    border-bottom-left-radius: 16px;
+    border-bottom: unset;
+
+}
+header .studentInfo .altLinks > div {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding: 16px;
+    height: 56px;
+    cursor: pointer;
+    width: 100%;
+    border-top: 1px solid #70707049;
+    border-bottom: 1px solid #70707049;
+}
+header .studentInfo .linksList .altLinks {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    display: flex;
+}
+
+header .studentInfo .linksList .altLinks h5 {
+    margin-right: 24px;
+}
+header .studentInfo .linksList {
+    height: fit-content!important;
+}
+.landingContent {
+    height: 852px;
+    align-items: center;
+  
+}
+.landingContent > img {
+    height: 852px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    /* background-repeat: no-repeat; */
+    object-fit: cover;
+}
+.landingContent .landingText {
+    font: normal normal medium 20px/26px Roboto;   
+}
+.landingContent .landingText h1 {
+    font-size: 50px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.landingContent .landingText h1 span {
+    color: var(--main-color);
+}
+.landingContent .landingText p {
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    line-height: 1.2;
+    text-align: center;
+}
+.landingContent button {
+    padding: 17px 45px;
+    width: 229px;
+    height: 61px;
+    background: var(--main-color) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #3B3B3B;
+    border-radius: 31px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+.landingContent button:hover {
+    background-color: white;
+    color: var(--main-color);
+    transition: 0.5s;
+
+}
+.landingContent button svg {
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    color: white;
+}
+header .navLinks {
+    display: flex;
+}
+
+header .navLinks.active .studentInfo {
+    width: 100%;
+}
+.landingContent button:hover svg {
+    color: var(--main-color);
+
+}
+.studentInfo i {
+    color: black;
+    font-size: 25px;
+}
+.studentInfo i.mainArrowDownIconDown,
+.studentInfo i.altArrowDownIconDown,
+header .studentInfo .linksList .altLinks {
+    display: none;
+}
+/*     margin-top: 167px; */
+.landingContent button:hover i {
+    color: var(--main-color);
+    transition: 0.3s;
+}
+.navBar {
+    display: none!important;
+    font-size: 30px;
+    width: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 0px 0px 16px 0px ;
+}
+@media (max-width: 767px) {
+    .navBar {
+        display: flex!important;
+    }  
+    header .navLinks {
+        display: none;
+    } 
+    header {
+        height: 70px;
+    }
+    header .logo {
+        padding: 0 20px;
+        width: 80px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .logo img {
+        width: 50px;
+        height: 50px;
+    }
+    .landingContent .landingText h1 {
+        font-size: 35px;
+    }
+    .landingContent .landingText p {
+        font-size: 18px;
+    }
+    header .navLinks.active {
+        display: flex;
+        position: absolute;
+        top: 70px;
+        padding-top: 20px;
+        background-color: white;
+        width: 100%;
+        
+        flex-direction: column!important;
+    }
+}
+@media (max-width: 545px) {
+    .landingContent .landingText h1 {
+        font-size: 25px;
+    }
+    .landingContent .landingText p {
+        font-size: 16px;
+        margin-bottom: 0!important;
+    }
+}
+.programs,
+.schedule {
+    padding: 32px 0 0;
+    font: normal normal 800 22px/32px Tajawal;
+}
+.programs h2,
+.schedule h2 {
+    font-size: 28px;
+}
+.programs .programsContent {
+    /* margin-left: 250px;
+    margin-right: 250px; */
+    margin-top: 20px;
+}
+.programs .programsContent h4 {
+    font-size: 22px;
+    font: normal normal bold 28px/42px Tajawal;
+}
+.programs .programCard p {
+    color: #636163;
+    text-align: center;
+font: normal normal normal 14px/17px Tajawal;
+letter-spacing: 0px;
+color: #636163;
+height: 37px;
+padding: 0 16px;
+}
+.programs .programCard  {
+    width: 264px;
+    height: 352px;
+    padding: 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #7BA8B83B;
+    border-radius: 24px;
+}
+.programs .programCard button {
+    color: var(--main-color);
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.module-table {
+    border: solid thin;
+    border-collapse: collapse;
+}
+
+.module-table th {
+    vertical-align: middle;
+    text-align: center;
+    border: solid thin;
+}
+
+.module-table-cell {
+    border: solid thin;
+}
+.module-table tbody:nth-of-type(odd){
+  background-color: lightgray;
+}
+.module-table-rack-info{
+  border-top: 1px solid black;
+}
+table {
+    direction: rtl;
+    border-collapse: collapse;
+    border-spacing: 0;
+    min-width: 1650px;
+        border: 1px solid #ddd;
+}
+@media (min-width: 1650px) {
+    table {
+        min-width: 100%;
+    }
+}
+.tableContent {
+    overflow-x: auto;
+    scrollbar-color: var(--main-color) white;
+    scrollbar-width: thin;
+
+}
+.tableContent::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+}
+
+table th {
+    background-color: var(--main-color);
+    color: white;
+    padding: 35px 0;
+    font-size: 18px;
+    width: 200px;
+    font: normal normal 600 18px/33px Cairo;
+    letter-spacing: 0px;   
+    text-align: center;
+}
+table td {
+    text-align: right;
+    font: normal normal normal 18px/33px Cairo;
+    letter-spacing: 0px;
+    color: #A2A2A2;
+    background-color: white;
+    padding: 20px 10px;
+    width: 200px;
+    
+}
+.whyJoinUs .whyJoinUsCard {
+    padding: 32px 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 214px;
+    background-color: white;
+}
+.whyJoinUs .whyJoinUsCard p {
+    text-align: center;
+    padding: 10px;
+    font: normal normal medium 20px/28px Tajawal;
+letter-spacing: 0px;
+color: #636163;
+}
+.whyJoinUs .whyJoinUsCard img {
+    width: 73px;
+    height: 73px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.whyJoinUs .layout {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.layout {
+    z-index: -1;
+    transform: scale(200%);
+}
+.yin-yang {
+    height: 240px;
+    aspect-ratio: 1;
+    
+    border-radius: 50%;
+    background: 
+     radial-gradient(25% 25% at 50% 25%,var(--main-color) 24%,var(--main-color) 26% 99%,#0000 101%), 
+     radial-gradient(25% 25% at 50% 75%,var(--main-color) 24%,var(--main-color) 26% 99%,#0000 101%), 
+     conic-gradient(var(--main-color) 50%, var(--main-color) 0);
+  }
+.layout .egg:first-child {
+    margin-top: -40px;
+}
+.layout .yin-yang:nth-child(2) {
+    transform: rotate(150deg);
+    margin-top: -130px;
+}
+.layout .yin-yang:nth-child(3) {
+    transform: rotate(150deg);
+    margin-left: -100px;
+    margin-top: -300px;
+}
+.whyJoinUs {
+    height: 50vh;
+    width: 50%!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.whyJoinUs .whyJoinUsContent {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    left: 0;
+    top: 25%;
+    height: 60%;
+
+}
+@media (max-width: 1200px) {
+    .whyJoinUs {
+        width: 100%!important;
+    }
+}
+
+.whyJoinUs .whyJoinUsContent .whyJoinUsCard {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.whyJoinUs .whyJoinUsContent .whyJoinUsCard:nth-child(1) {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.whyJoinUs .whyJoinUsContent .whyJoinUsCard:nth-child(2) {
+    position: absolute;
+
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+.whyJoinUs .whyJoinUsContent .whyJoinUsCard:nth-child(3) {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.whyJoinUs .whyJoinUsContent .whyJoinUsCard:nth-child(4) {
+    top: 50%;
+    position: absolute;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 992px) {
+    .whyJoinUs {
+        width: 100%!important;
+        height: 100%!important;
+        padding: 0!important;
+        
+    }
+    .whyJoinUs .whyJoinUsContent {
+        height: 100%!important;
+        width: 100%!important;
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
+        position: unset;
+        gap: 40px;
+        top: 50px;
+        padding: 0!important;
+    }
+    .whyJoinUs .whyJoinUsContent .whyJoinUsCard {
+        position: unset;
+        transform: unset;
+        left:unset;
+        top: unset;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .whyJoinUs .whyJoinUsContent .whyJoinUsCard:nth-child(4),
+    .whyJoinUs .whyJoinUsContent .whyJoinUsCard:nth-child(3),
+    .whyJoinUs .whyJoinUsContent .whyJoinUsCard:nth-child(2),
+    .whyJoinUs .whyJoinUsContent .whyJoinUsCard:nth-child(1) {
+        position: unset;
+        transform: unset;
+        left:unset;
+        top: unset;
+    }
+}
+footer {
+    height: 500px;
+    margin-top: 350px;
+    position: relative;
+    background-color: black;
+    background: rgba(0, 0, 0, 0.879) url('../assets/icons/Pattern\ \(1\).svg') 0% 0%  padding-box;
+    mix-blend-mode: normal;
+    width: 100%;
+}
+footer .person {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+footer .leftFooter:first-child {
+    border-bottom: 1px solid rgb(57, 56, 56);
+
+}
+footer .leftFooter p {
+    text-align: right;
+font: normal normal normal 12px/17px Tajawal;
+letter-spacing: 0px;
+width: 300px;
+color: #D6D5D3;
+padding-top: 45px;
+height: 63px;
+
+padding-right: 30px;
+border-right: 1px solid grey;
+}
+.footerContent > div:first-child {
+    border-bottom: 1px solid rgb(57, 56, 56);
+    border-right: 1px solid rgb(57, 56, 56);}
+.h-90 {
+    height: 90%;
+}
+.leftFooter .text-white div {
+    color: #F7F6F5;
+}
+footer .endOfFooter {
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    font-size: 12px;
+}
+footer .rightFooter {
+       width: 38%; 
+       border-bottom: 1px solid rgb(57, 56, 56);
+}
+footer .rightFooter h1 {
+    width: 325px;
+    text-align: right;
+    padding-top: 40px;
+}
+footer .rightFooter .input {
+    height: 58px;
+    width: 325px;
+}
+footer .rightFooter .input input {
+    direction: rtl;
+    padding-right: 20px;
+    border-radius: 30px;
+}
+
+footer .rightFooter .input .icon {
+    width: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 58px;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    background-color: #018075;
+}
+footer .rightFooter .input i {
+    color: black;
+}
+@media (max-width: 1300px) {
+    footer .person img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .whyJoinUs {
+        overflow: hidden;
+    }
+    footer .person img {
+        height: 300px;
+    }
+    footer .rightFooter {
+        width: 50%;
+        /* justify-content: end!important; */
+        align-items: end!important;
+    }
+    footer .rightFooter .input {
+        width: unset!important;
+    }
+    footer .leftFooter p {
+        padding-top: 0;
+        padding-right: 10px;
+    }
+    footer .leftFooter:first-child {
+        padding-left: 10px!important;
+    }
+    footer .rightFooter h1 {
+        width: unset;
+        font-size: 25px;
+    }
+}
+@media (max-width: 767px) {
+    .footerContent {
+        flex-direction: column;
+    }
+    .footerContent > div {
+        width: 100%!important;
+    }
+    footer .person img {
+        display: none;
+    }
+    footer {
+        height: unset;
+    }
+    .footerContent > div:first-child > div:nth-child(2) {
+        padding-bottom: 20px;
+    }
+    footer .rightFooter {
+        justify-content: center!important;
+        align-items: center!important;
+        padding-bottom: 40px;
+        padding-top: 5px!important;
+    }
+}
+@media (max-width: 545px) {
+    .footerContent > div:first-child > div:nth-child(2) > div:first-child {
+        margin-top: -50px!important;
+    }
+}
