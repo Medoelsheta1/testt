@@ -32,6 +32,9 @@ header {
 .f12 {
     font-size: 12px;
 }
+.text-right {
+    text-align: right;
+}
 .cursorPointer {
     cursor: pointer;
 }
